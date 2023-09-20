@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h3>TASK - 4</h3>
+    <div style=" width: 280px; height: 300px;">
+        <label for="fullname" style="float: left;">Full Name:</label>
+        <input type="text" id="fullname" style="float: right;">
+        <br><br>
+        <label for="username" style="float: left;">Username:</label>
+        <input type="text" id="username" style="float: right;">
+        <br><br>
+        <label for="password" style="float: left;">Password:</label>
+        <input type="text" id="password" style="float: right;">
+        <br><br>
+        <label for="re-password" style="float: left;">Re-Password:</label>
+        <input type="text" id="re-password" style="float: right;">
+        <br><br>
+        <label for="address" style="float: left;">Address:</label>
+        <input type="text" id="address" style="float: right;">
+        <br><br>
+        <label for="age" style="float: left;">Age:</label>
+        <input type="text" id="age" style="float: right;">
+        <br><br>
+        <label for="gender" style="float: left;">Gender:</label>
+        <select id="gender" style="float: right; width: fit-content;">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+        </select>
+        <br><br>
+        <button style="background-color: rgb(221, 223, 223); display: flex; justify-content: center;">Save</button>
+    </div>
+    <br>
+    <script>
+        var passwordField = document.getElementById("password");
+        passwordField.addEventListener("keydown", function(event) 
+        {
+        event.target.value = event.target.value.replace(/./g, "•");
+        });
+
+        var passwordField = document.getElementById("re-password");
+        passwordField.addEventListener("keydown", function(event) 
+        {
+        event.target.value = event.target.value.replace(/./g, "•");
+        });
+    </script>
+</body>
+</html>
